@@ -224,7 +224,7 @@
 }
 
 - (IBAction)updateFilter:(id)sender {
-    FilterListViewController* flvc = [[FilterListViewController alloc] initWithSelectedCategories:[Categories filteredCategories] deleagte:self];
+    FilterListViewController* flvc = [[FilterListViewController alloc] initWithSelectedCategories:[Categories filteredCategories] delegate:self];
     [self.navigationController pushViewController:flvc animated:YES];
 }
 

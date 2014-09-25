@@ -25,7 +25,7 @@
     return self;
 }
 
-- (instancetype) initWithSelectedCategories:(NSArray*)selections deleagte:(id<CategoryDelegate>)delegate
+- (instancetype) initWithSelectedCategories:(NSArray*)selections delegate:(id<CategoryDelegate>)delegate
 {
     self = [super init];
     if (self) {
