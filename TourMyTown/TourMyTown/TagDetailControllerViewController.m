@@ -64,7 +64,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == kCategoryRow) {
-        FilterListViewController* flvc = [[FilterListViewController alloc] initWithSelectedCategories:self.location.categories deleagte:self];
+        FilterListViewController* flvc = [[FilterListViewController alloc] initWithSelectedCategories:self.location.categories delegate:self];
         [self.navigationController pushViewController:flvc animated:YES];
     }
 }
